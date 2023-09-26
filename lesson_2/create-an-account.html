@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="another-all">
+    <div class="text">
+        <div class="title">The Kennel Club</div>
+        <ol>
+            <li>Enter your email address.</li>
+            <li>Click "Send verification code".</li>
+            <li>Look in your email inbox for the six digit code sent to you and enter it into the box below.</li>
+            <li>Click "Verify code".</li>
+            <li>Choose a password and finish creating your account.</li>
+        </ol>
+    </div>
+
+    <div class="beige-box">Verification is necessary. Please click Send button.</div>
+    <form class="another-all2">
+        <input id="email" class="input" placeholder="Email Address"/>
+        <div style="color: red" id="noEmail"></div>
+        <button class="verification-btn">SEND VERIFICATION CODE</button>
+        <input type="password" id="password" style="margin-top: 10px" class="input" placeholder="New Password"/>
+        <div style="color: red" id="noPassword"></div>
+        <input type="password" id="confirmPassword" style="margin-top: 10px" class="input" placeholder="Confirm New Password "/>
+        <div style="color: red" id="ifo"></div>
+        <button onclick="createAccount(event)" class="sign-in-btn">CREATE</button>
+        <button id="cancel-button" style="color: red; background-color: pink" class="sign-in-btn">CANCEL</button>
+
+    </form>
+
+    <script src="index.js"></script>
+</div>
+</body>
+</html>

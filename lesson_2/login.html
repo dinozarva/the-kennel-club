@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<div class="all">
+    <div class="text">
+        <a class="title" href="index.html">The Kennel Club</a>
+        <div>If you have not created an account on The Kennel Club<br> website since 30 September 2020, please create an
+            account.
+        </div>
+    </div>
+    <form class="all2">
+        <input id="email" class="input" placeholder="Email Address"/>
+        <div style="color: red" id="noEmail"></div>
+        <a class="link" href="#">Forgot your password?</a>
+        <input type="password" id="password" class="input" placeholder="Password"/>
+        <div style="color: red" id="noPassword"></div>
+        <button onclick="checkValidData(event)" class="sign-in-btn">SIGN IN</button>
+    </form>
+    <div>OR</div>
+    <div>Don't have an account?
+        <a class="link" href="create-an-account.html">Create an account</a>
+    </div>
+</div>
+<script src="login.js"></script>
+</body>
+</html>
